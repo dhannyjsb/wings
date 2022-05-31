@@ -1,5 +1,8 @@
 name: Create Release
-on: workflow_dispatch
+on:
+  push:
+    tags:
+      - 'v*'
 jobs:
   release:
     runs-on: ubuntu-20.04
